@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #box{
+            width: 500px;
+            background-color: antiquewhite;
+            margin: 100px ;
+        }
+        #brick{
+            height: 50px;
+            width: 50px;
+            background-color: tomato;
+            transition: 5s;
+        }
+        #box:hover #brick{
+            /* transform: rotateX(-180deg); */
+            /* transform: rotateY(-180deg); */
+            /* transform: rotateZ(-180deg); */
+            transform: rotate3d(1,1,1,360deg)  translateX(300px);
+        }
+    </style>
+</head>
+<body>
+    <div id="box">
+        <div id="brick">HEY</div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            height: 200px;
+            width: 200px;
+            background-color: antiquewhite;
+            display: flex;
+            flex-wrap: wrap;
+            margin: 150px;
+        }
+        .box div{
+            height: 50%;
+            width: 50%;
+            transition: 2s;
+
+        }
+        .a{
+            background-color: black;
+        }
+        .b{
+            background-color: red;
+        }
+        .c{
+            background-color: yellow;
+        }
+        .d{
+            background-color: orange;
+        }
+
+        .box:hover .a{
+            transform: translate(-100px,-100px);
+        }
+        .box:hover .b{
+            transform: translate(100px,-100px);
+        }
+        .box:hover .c{
+            transform: translate(-100px,100px);
+        }
+        .box:hover .d{
+            transform: translate(100px,100px);
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div class="a"></div>
+        <div class="b"></div>
+        <div class="c"></div>
+        <div class="d"></div>
+    </div>
+</body>
+</html>
